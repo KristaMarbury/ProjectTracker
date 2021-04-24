@@ -9,20 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Project Tracker</title>
 </head>
 
 <body>
+    <!-- create header jumbotron style (hardcode first to see if it works, then go through js)-->
     <header class="jumbotron jumbotron-fluid custom-jumbotron">
         <div class="container text-center">
             <h1>Project Tracker</h1>
             <h2>Current Time &amp; Date: <br /> <span id="time-display">00:00:00</span></h2>
         </div>
     </header>
+    <!-- instructions and table of projects-->
     <main class="container-fluid">
         <div class="row">
-            <section class="col-12 col-md-4 col-lg-3">
+            <!-- instruction aside -->
+            <aside class="col-12 col-md-4 col-lg-3">
                 <div class="card custom-card">
                     <h3 class="card-header">
                         Instructions
@@ -43,7 +46,8 @@
                             Project</button>
                     </div>
                 </div>
-            </section>
+            </aside>
+            <!-- project table -->
             <section class="col-12 col-md-8 col-lg-9">
                 <div class="table-responsive">
                     <table class="table table-bordered custom-table">
@@ -81,6 +85,7 @@
                             <label for="project-name-input">Project Name</label>
                             <input type="text" id="project-name-input" class="form-control"
                                 placeholder="Enter the project's name" required />
+                            <!--^ I always want a placeholder when I create forms ^-->
                         </div>
                         <div class="form-group">
                             <label for="project-type-input">Project Type</label>
@@ -98,6 +103,7 @@
                             <label for="hourly-rate-input">Hourly Rate ($)</label>
                             <input type="number" id="hourly-rate-input" class="form-control" placeholder="$" min="0"
                                 required />
+                            <!--^ Placeholders work with anything and everything, bootstrap and beyond! ^-->
                         </div>
                         <div class="form-group">
                             <label for="due-date-input">Due Date</label>
@@ -118,7 +124,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
